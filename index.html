@@ -19,7 +19,7 @@
 
 /* FUNDO CINEMATOGRÁFICO COM IMAGEM OTIMIZADA */
 body {
-  background-color: #121212; /* Fundo escuro levemente mais neutro */
+  background-color: #121212;
   background-image: url('fundo.jpg');
   background-size: cover;
   background-position: center;
@@ -29,7 +29,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 5vh;
+  padding-top: 2vh; /* Reduzido para subir o conteúdo no celular */
   padding-bottom: 5vh;
   min-height: 100vh;
   overflow-x: hidden;
@@ -92,14 +92,14 @@ h1 {
   font-weight: 600;
   padding: 6px 14px;
   border-radius: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 15px; /* Reduzido para apertar o design */
 }
 
 /* BOTÃO PRINCIPAL (WHATSAPP) */
 .btn-main {
   display: block;
   width: 100%;
-  background: #25D366; /* Verde WhatsApp */
+  background: #25D366;
   color: #fff;
   text-transform: uppercase;
   font-weight: 800;
@@ -127,7 +127,7 @@ h1 {
   font-weight: 600;
   padding: 12px 20px;
   border-radius: 8px;
-  margin-bottom: 35px;
+  margin-bottom: 15px; /* Reduzido para aproximar as estrelas */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -147,10 +147,27 @@ h1 {
   100% { color: #FF8C00; }
 }
 
+/* PROVA SOCIAL MOVIDA PARA CIMA */
+.social-proof-top {
+  font-size: 13px;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 25px; /* Espaço antes das vantagens */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.stars {
+  color: #FFD700;
+  letter-spacing: 2px;
+}
+
 /* SESSÃO DE VANTAGENS */
 .advantages-title {
   font-size: 13px;
-  color: #FF8C00; /* Laranja para destacar */
+  color: #FF8C00;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 800;
@@ -162,8 +179,8 @@ h1 {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255,255,255,0.05);
   border-radius: 12px;
-  padding: 15px;
-  margin-bottom: 12px;
+  padding: 12px; /* Reduzido para caixas mais finas */
+  margin-bottom: 10px; /* Reduzido para juntar as caixas */
   text-align: left;
   display: flex;
   align-items: center;
@@ -189,7 +206,7 @@ h1 {
   line-height: 1.4;
 }
 
-/* FOOTER & PROVA SOCIAL */
+/* FOOTER */
 .footer {
   margin-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -212,20 +229,6 @@ h1 {
   margin-bottom: 15px;
 }
 
-.social-proof {
-  font-size: 12px;
-  color: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-
-.stars {
-  color: #FFD700;
-  letter-spacing: 2px;
-}
-
 </style>
 </head>
 
@@ -233,7 +236,6 @@ h1 {
 
 <div class="container">
 
-<!-- Coloquei a logo/foto de perfil comentada caso queira usar. Se não, pode apagar a linha abaixo -->
 <img src="logo-gamer.jpeg" alt="Logo" class="profile-pic">
 
 <h1>Descubra as melhores ofertas de hardware e economize no seu setup</h1>
@@ -242,13 +244,18 @@ h1 {
   👇 Grupo VIP Gratuito!
 </div>
 
-<!-- LINK DO SEU GRUPO AQUI -->
+<!-- LINK DO GRUPO -->
 <a href="https://chat.whatsapp.com/HuanHr1x8AMCoNoOl6K786" class="btn-main">
   ENTRAR NO GRUPO AGORA
 </a>
 
 <div class="urgency-box">
   ⏳ Vagas restantes: <span class="urgency-number">6</span>
+</div>
+
+<!-- PROVA SOCIAL POSICIONADA AQUI -->
+<div class="social-proof-top">
+  <span class="stars">★★★★★</span> +2.400 membros satisfeitos
 </div>
 
 <div class="advantages-title">NO GRUPO VOCÊ VAI ENCONTRAR:</div>
@@ -297,10 +304,6 @@ h1 {
   
   <div class="disclaimer">
     ⚠️ Vagas limitadas | Oferta válida apenas enquanto houver vagas.
-  </div>
-
-  <div class="social-proof">
-    <span class="stars">★★★★★</span> +2.400 membros satisfeitos
   </div>
 </div>
 
